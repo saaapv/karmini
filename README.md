@@ -42,7 +42,7 @@ Netlify (arrastrar la carpeta en *Add new site → Deploy manually*) o Vercel/Gi
 - **SEO**: un solo dominio, `canonical`, `og:image` absoluta, JSON-LD generado desde `config.js`.
 - **Limpieza**: de 23 archivos a los necesarios; se eliminaron `animations.css`, `animations.js`, cursor personalizado, skeleton, ribbon, glitch, keyframes sin uso y la documentación duplicada.
 
-## Pendiente antes de publicar (lo debe hacer el estudio)
+## Pendiente antes de publicar (lo debe hacer el estudio) fin
 1. Reemplazar WhatsApp, teléfono, correo, dirección, horarios y **cifras reales** de `estadísticas`.
 2. Subir fotos reales (portafolio, artistas, `estudio.jpg`, `og-image.jpg` de 1200×630, poster/video del hero).
 3. Sustituir los testimonios de ejemplo por **reseñas reales con permiso**, y revisar FAQ (precios, abono, pagos).
