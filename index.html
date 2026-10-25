@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A0A0A">
+<script>/* Marca que hay JS; si main.js falla, se quita y todo queda visible */
+document.documentElement.classList.add('js');setTimeout(function(){if(!window.__karma)document.documentElement.classList.remove('js')},3000);</script>
+<title>KARMA — Estudio de tatuajes y piercing | El arte deja marca</title>
+<meta name="description" content="Estudio de tatuajes y perforaciones corporales. Artistas expertos, higiene profesional y diseños únicos. Agenda tu cita por WhatsApp.">
+<link rel="canonical" href="https://karmastudio.com/">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_CO">
+<meta property="og:title" content="KARMA — Tattoo & Piercing Studio">
+<meta property="og:description" content="El arte deja tatuar. Nosotros, la tuya.">
+<meta property="og:url" content="https://karmastudio.com/">
+<meta property="og:image" content="https://karmastudio.com/assets/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <div class="container header__in">
+    <a href="#hero" class="logo" aria-label="KARMA, ir al inicio"><span class="logo__k">K</span>KARMA</a>
+    <nav class="nav" aria-label="Principal"><ul>
+      <li><a href="#estudio">Estudio</a></li><li><a href="#portafolio">Portafolio</a></li><li><a href="#artistas">Artistas</a></li>
+      <li><a href="#proceso">Proceso</a></li><li><a href="#faq">Preguntas</a></li><li><a href="#contacto">Contacto</a></li></ul></nav>
+    <div class="header__act">
+      <a href="#contacto" class="btn btn--red btn--sm hide-m">Reservar</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" inert>
+  <nav aria-label="Menú móvil"><ul>
+    <li><a href="#estudio">Estudio</a></li><li><a href="#portafolio">Portafolio</a></li><li><a href="#artistas">Artistas</a></li>
+    <li><a href="#proceso">Proceso</a></li><li><a href="#faq">Preguntas</a></li><li><a href="#contacto">Contacto</a></li></ul>
+    <a href="#" class="btn btn--wa" data-whatsapp>Agendar por WhatsApp</a></nav>
+</div>
+
+<main id="main">
+<section class="hero" id="hero" aria-label="Presentación">
+  <div class="hero__bg" id="hero-bg"></div>
+  <div class="container hero__in">
+    <p class="hero__sub" id="hero-eyebrow">Tattoo &amp; Piercing Studio</p>
+    <h1 class="hero__title" id="hero-title">El arte de dejar huella. <span class="text-fire">Nosotros, tu Karma.</span></h1>
+    <p class="hero__lead" id="hero-lead">Tatuajes y perforaciones con identidad propia. Cada trazo cuenta una historia.</p>
+    <div class="hero__cta"><a href="#portafolio" class="btn btn--red">Ver portafolio</a><a href="#" class="btn btn--ghost" data-whatsapp>Agendar por WhatsApp</a></div>
+  </div>
+  <a href="#estudio" class="hero__scroll" aria-label="Bajar a la siguiente sección"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+<section class="section" id="estudio" aria-labelledby="t-estudio">
+  <div class="container split">
+    <div data-reveal>
+      <h2 class="h2" id="t-estudio">No es solo tinta. <span class="text-fire">Es intención.</span></h2>
+      <p class="lead" data-config="estudio.historia"></p>
+      <p class="muted" data-config="estudio.filosofia"></p>
+      <dl class="stats">
+        <div><dd data-stat="trabajos" data-count="0">0</dd><dt>trabajos realizados</dt></div>
+        <div><dd data-stat="anios" data-count="0">0</dd><dt>años de experiencia</dt></div>
+        <div><dd data-stat="artistas" data-count="0">0</dd><dt>artistas residentes</dt></div>
+      </dl>
+    </div>
+    <figure class="estudio__fig" data-reveal><img src="assets/images/estudio.jpg" alt="Interior del estudio KARMA" loading="lazy" decoding="async" width="800" height="1000"></figure>
+  </div>
+</section>
+
+<section class="section section--alt" id="portafolio" aria-labelledby="t-port">
+  <div class="container">
+    <header class="head" data-reveal><h2 class="h2" id="t-port">El trabajo <span class="text-fire">habla</span></h2><p class="muted">Filtra por tipo o estilo y toca una pieza para verla en grande.</p></header>
+    <div class="filters" id="filters" role="group" aria-label="Filtros del portafolio"></div>
+    <p class="sr-only" id="port-status" role="status" aria-live="polite"></p>
+    <div class="grid-port" id="port-grid"></div>
+    <p class="empty" id="port-empty" hidden>Aún no hay trabajos en esta categoría. Prueba con otro filtro.</p>
+  </div>
+</section>
+
+<section class="section" id="artistas" aria-labelledby="t-art">
+  <div class="container"><header class="head" data-reveal><h2 class="h2" id="t-art">Manos que <span class="text-fire">interpretan</span></h2><p class="muted">Cada artista tiene su estilo. Encuentra el tuyo.</p></header>
+  <div class="grid-art" id="art-grid"></div></div>
+</section>
+
+<section class="section section--alt" id="proceso" aria-labelledby="t-proc">
+  <div class="container"><header class="head" data-reveal><h2 class="h2" id="t-proc">Tu historia en <span class="text-fire">cinco pasos</span></h2></header>
+  <ol class="steps" id="steps"></ol></div>
+</section>
+
+<section class="section" id="testimonios" aria-labelledby="t-test">
+  <div class="container"><header class="head" data-reveal><h2 class="h2" id="t-test">Lo que deja <span class="text-fire">Karma</span></h2></header>
+  <div class="carousel" role="region" aria-roledescription="carrusel" aria-label="Testimonios de clientes">
+    <div class="carousel__view"><div class="carousel__track" id="car-track" aria-live="off"></div></div>
+    <div class="carousel__ctl"><button class="circ" id="car-prev" aria-label="Testimonio anterior">‹</button><div class="dots" id="car-dots"></div><button class="circ" id="car-pause" aria-label="Pausar rotación">❚❚</button><button class="circ" id="car-next" aria-label="Testimonio siguiente">›</button></div>
+  </div></div>
+</section>
+
+<section class="section section--alt" id="faq" aria-labelledby="t-faq">
+  <div class="container"><header class="head" data-reveal><h2 class="h2" id="t-faq">Preguntas <span class="text-fire">frecuentes</span></h2></header>
+  <div class="faq" id="faq-list"></div></div>
+</section>
+
+<section class="section" id="contacto" aria-labelledby="t-cont">
+  <div class="container">
+    <header class="head" data-reveal><h2 class="h2" id="t-cont">Hablemos de tu <span class="text-fire">idea</span></h2><p class="muted">Cuéntanos qué tienes en mente y te respondemos en menos de 24 horas.</p></header>
+    <div class="cont">
+      <form class="form" id="form" novalidate>
+        <div class="f"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name" required><small data-err="nombre"></small></div>
+        <div class="f"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" required><small data-err="email"></small></div>
+        <div class="f"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000" required><small data-err="telefono"></small></div>
+        <div class="f f--half"><label for="servicio">Servicio</label><select id="servicio" name="servicio" required><option value="">Selecciona…</option><option>Tatuaje</option><option>Piercing</option><option>Ambos</option><option>Consulta</option></select><small data-err="servicio"></small></div>
+        <div class="f f--half"><label for="artista">Artista preferido <span class="muted">(opcional)</span></label><select id="artista" name="artista"><option value="">Sin preferencia</option></select></div>
+        <div class="f"><label for="mensaje">Tu idea</label><textarea id="mensaje" name="mensaje" rows="5" required placeholder="Diseño, tamaño aproximado, zona del cuerpo, referencias…"></textarea><small data-err="mensaje"></small></div>
+        <div class="f f--check"><label><input type="checkbox" name="politicas" required> <span>Acepto la <a href="legal.html#privacidad" target="_blank" rel="noopener">política de privacidad</a> y el tratamiento de mis datos.</span></label><small data-err="politicas"></small></div>
+        <button class="btn btn--red btn--full" id="send" type="submit">Enviar mensaje</button>
+        <p class="feedback" id="feedback" role="status"></p>
+      </form>
+      <aside class="info">
+        <div><h3>WhatsApp</h3><a href="#" data-whatsapp class="link">Escríbenos ahora</a></div>
+        <div><h3>Dirección</h3><p data-config="estudio.direccion"></p></div>
+        <div><h3>Teléfono</h3><a class="link" id="tel" data-config="estudio.telefono" href="#"></a></div>
+        <div><h3>Horarios</h3><ul class="hours"><li><span>Lunes a viernes</span><span data-config="estudio.horario.lunes_viernes"></span></li><li><span>Sábado</span><span data-config="estudio.horario.sabado"></span></li><li><span>Domingo</span><span data-config="estudio.horario.domingo"></span></li></ul></div>
+        <div class="map" id="map"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <div><a href="#hero" class="logo"><span class="logo__k">K</span>KARMA</a><p class="muted">Tattoo &amp; Piercing Studio</p></div>
+    <div><h3>Síguenos</h3><ul id="redes"></ul></div>
+    <div><h3>Legal</h3><ul><li><a href="legal.html#privacidad">Política de privacidad</a></li><li><a href="legal.html#terminos">Términos y condiciones</a></li><li><a href="legal.html#cookies">Cookies</a></li></ul></div>
+  </div>
+  <p class="container foot__end">© <span id="year"></span> KARMA Tattoo &amp; Piercing Studio. Todos los derechos reservados.</p>
+</footer>
+
+<a href="#" class="wa" data-whatsapp aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.78a9.9 9.9 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg><span class="wa__tip">¿Hablamos?</span></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Visor de imágenes" inert>
+  <button class="lb__x" id="lb-x" aria-label="Cerrar visor">✕</button>
+  <button class="lb__n lb__n--p" id="lb-p" aria-label="Anterior">‹</button>
+  <figure><img id="lb-img" alt="" hidden><video id="lb-vid" controls playsinline hidden></video><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb__n lb__n--n" id="lb-n" aria-label="Siguiente">›</button>
+</div>
+<noscript><p class="noscript">Para ver el portafolio activa JavaScript o <a href="https://wa.me/573001234567">escríbenos por WhatsApp</a>.</p></noscript>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
