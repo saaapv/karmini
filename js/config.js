@@ -40,7 +40,7 @@ window.CONFIG = {
   ],
 
   artistas: [
-    { nombre:"Juan Pitbull",      especialidad:"sombras y realismo", bio:"el mas pro de las sombras en PASTO gonorreaaaS",        foto:"assets/images/artistas/juano.jpg",      instagram:"https://instagram.com/saaap_v" },
+    { nombre:"Juan Pitbull",      especialidad:"sombras y realismo", bio:"el mas pro de las sombras en PASTO gonorreaaaS",        foto:"assets/images/artistas/juano.JPG",      instagram:"https://instagram.com/saaap_v" },
     { nombre:"Carolina Guerrero",   especialidad:"Realismo y color",        bio:"Retratos y piezas realistas con técnica impecable.",          foto:"assets/images/artistas/carlos-vega.webp",   instagram:"https://instagram.com/carlos.tattoo" },
     { nombre:"Diego no se el apellido", especialidad:"Piercing y joyería",      bio:"Precisión anatómica y joyería de calidad en cada perforación.",foto:"assets/images/artistas/mariana-lopez.webp", instagram:"https://instagram.com/mariana.piercing" },
     { nombre:"Santiago Pantoja", especialidad:"Neotradicional",          bio:"Cuenta historias con color, textura y narrativa visual.",     foto:"assets/images/artistas/diego-herrera.webp", instagram:"https://instagram.com/diego.tattoo" }
@@ -61,13 +61,13 @@ window.CONFIG = {
     { nombre:"Cliente 3", rol:"Piercing helix",       estrellas:5, texto:"Reemplaza este texto por una reseña real de un cliente." }
   ],
 
-  // IMPORTANTE: precios y políticas deben coincidir con lo que el estudio realmente hace.
+  // IMPORTANTE: precios y políticas deben coincidir con lo que el o realmente hace.
   faq: [
     { pregunta:"¿Cuál es la edad mínima?", respuesta:"Debes ser mayor de 18 años y presentar documento de identidad válido." },
     { pregunta:"¿Cómo cuido mi tatuaje o piercing?", respuesta:"Te entregamos una guía de cuidados al terminar. En general: lavar con jabón neutro, hidratar, evitar sol directo y no rascar." },
     { pregunta:"¿Cuánto cuesta?", respuesta:"Depende del tamaño, la técnica, la zona y el artista. Te enviamos una cotización personalizada tras la consulta." },
     { pregunta:"¿Necesito abonar para reservar?", respuesta:"Sí, pedimos un abono para bloquear tu cita. Se descuenta del precio final. [Define aquí el porcentaje y la política de cancelación]." },
-    { pregunta:"¿Qué métodos de pago aceptan?", respuesta:"[Define aquí los métodos de pago reales del estudio]." },
+    { pregunta:"¿Qué métodos de pago aceptan?", respuesta:"[Define aquí los métodos de pago reales del o]." },
     { pregunta:"¿Puedo llevar mi propio diseño?", respuesta:"Claro. Trae tu idea o referencia y tu artista la adapta a lo que es posible en la piel." }
   ]
 };
