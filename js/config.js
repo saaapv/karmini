@@ -40,7 +40,7 @@ window.CONFIG = {
   ],
 
   artistas: [
-    { nombre:"Juan Pitbull",      especialidad:"sombras y realismo", bio:"el mas pro de las sombras en PASTO gonorreaaaS",        foto:"assets/images/artistas/juano.JPG",      instagram:"https://instagram.com/saaap_v" },
+    { nombre:"Juan Pitbull",      especialidad:"sombras y realismo", bio:"el mas pro de las sombras en PASTO gonorreaaaS",        foto:"assets/images/artistas/juano.jpg",      instagram:"https://instagram.com/saaap_v" },
     { nombre:"Carolina Guerrero",   especialidad:"Realismo y color",        bio:"Retratos y piezas realistas con técnica impecable.",          foto:"assets/images/artistas/carlos-vega.webp",   instagram:"https://instagram.com/carlos.tattoo" },
     { nombre:"Diego no se el apellido", especialidad:"Piercing y joyería",      bio:"Precisión anatómica y joyería de calidad en cada perforación.",foto:"assets/images/artistas/mariana-lopez.webp", instagram:"https://instagram.com/mariana.piercing" },
     { nombre:"Santiago Pantoja", especialidad:"Neotradicional",          bio:"Cuenta historias con color, textura y narrativa visual.",     foto:"assets/images/artistas/diego-herrera.webp", instagram:"https://instagram.com/diego.tattoo" }
